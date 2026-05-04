@@ -4,10 +4,10 @@
   "description": "Premium developer portfolio for Kabir Saboo",
   "main": "index.js",
   "scripts": {
-    "build": "tailwindcss -i ./src/input.css -o ./css/output.css",
-    "watch": "tailwindcss -i ./src/input.css -o ./css/output.css --watch",
-    "serve": "live-server --port=5173 --ignore=node_modules",
-    "dev": "concurrently \"npm run watch\" \"npm run serve\""
+    "server": "cd server && node server.js",
+    "client": "cd client && npm run dev",
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "seed": "cd server && node scripts/seed.js"
   },
   "keywords": [],
   "author": "Kabir Saboo",
