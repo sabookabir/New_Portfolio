@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  
+  body {
+    @apply bg-base-950 text-surface-200 font-sans selection:bg-primary/30 selection:text-white;
+  }
+
+  /* Custom Scrollbar */
+  ::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+  }
+  ::-webkit-scrollbar-track {
+    @apply bg-transparent;
+  }
+  ::-webkit-scrollbar-thumb {
+    @apply bg-surface-800 rounded-full hover:bg-surface-900 transition-colors;
+  }
+}
+
+@layer utilities {
+  .glass-nav {
+    @apply bg-base-950/70 backdrop-blur-xl border-b border-white/5;
+  }
+  .card-premium {
+    @apply bg-surface-900/40 border border-white/5 backdrop-blur-sm rounded-2xl transition-all duration-500 ease-out hover:-translate-y-1 hover:border-white/10 hover:shadow-[0_8px_30px_rgb(0,0,0,0.4)];
+  }
+  .chip-premium {
+    @apply px-4 py-2 bg-surface-900/50 border border-white/5 rounded-full text-sm font-medium text-surface-200 backdrop-blur-sm transition-colors hover:bg-surface-800 hover:border-white/10;
+  }
+  .text-glow-primary {
+    text-shadow: 0 0 40px var(--tw-colors-primary-glow);
+  }
+  .hide-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+  .hide-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+/* Reveal Animation Class (used by JS) */
+.reveal {
+  opacity: 0;
+  transform: translateY(24px);
+  transition: all 1s cubic-bezier(0.16, 1, 0.3, 1);
+  will-change: opacity, transform;
+}
+
+.reveal.active {
+  opacity: 1;
+  transform: translateY(0);
+}
