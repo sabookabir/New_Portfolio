@@ -2,11 +2,14 @@
   "name": "new-portfolio",
   "version": "1.0.0",
   "description": "Premium developer portfolio for Kabir Saboo",
-  "main": "index.js",
+  "main": "server/server.js",
   "scripts": {
+    "start": "node server/server.js",
     "server": "cd server && node server.js",
     "client": "cd client && npm run dev",
     "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "build": "cd client && npm install && npm run build",
+    "install-all": "npm install && cd server && npm install && cd ../client && npm install",
     "seed": "cd server && node scripts/seed.js"
   },
   "keywords": [],
@@ -15,11 +18,7 @@
   "devDependencies": {
     "autoprefixer": "^10.4.19",
     "concurrently": "^9.2.1",
-    "live-server": "^1.2.2",
     "postcss": "^8.4.38",
     "tailwindcss": "^3.4.3"
-  },
-  "dependencies": {
-    "@supabase/supabase-js": "^2.105.1"
   }
 }
