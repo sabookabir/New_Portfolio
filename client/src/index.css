@@ -39,11 +39,29 @@
   .nav-link {
     @apply text-sm font-medium text-surface-400 hover:text-white transition-colors relative py-2;
   }
+
+  .text-gradient-red {
+    @apply text-transparent bg-clip-text bg-gradient-to-r from-primary via-secondary to-primary bg-[length:200%_auto] animate-gradient-flow;
+  }
 }
 
 /* Subtle Tech Glow */
 .glow-text {
   text-shadow: 0 0 20px rgba(255, 215, 0, 0.3);
+}
+
+.glow-text-red {
+  text-shadow: 0 0 20px rgba(239, 68, 68, 0.4);
+}
+
+@keyframes gradient-flow {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+.animate-gradient-flow {
+  animation: gradient-flow 6s ease infinite;
 }
 
 ::selection {

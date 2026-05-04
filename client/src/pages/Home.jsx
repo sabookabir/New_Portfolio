@@ -61,7 +61,7 @@ const Home = () => {
         <div className="max-w-7xl mx-auto px-6 lg:px-10">
           <div className="mb-20 flex flex-col md:flex-row md:items-end justify-between gap-10">
             <div>
-              <h2 className="text-primary font-bold uppercase tracking-[0.2em] text-sm mb-4">Featured Work</h2>
+              <h2 className="text-secondary font-bold uppercase tracking-[0.2em] text-sm mb-4">Featured Work</h2>
               <h3 className="text-5xl md:text-6xl font-black text-white tracking-tight leading-none uppercase italic">Selected Projects.</h3>
             </div>
             <p className="text-surface-400 max-w-sm font-medium leading-relaxed">
@@ -123,7 +123,7 @@ const Home = () => {
         <div className="max-w-7xl mx-auto px-6 lg:px-10">
           <div className="grid lg:grid-cols-2 gap-24 items-center">
             <div>
-              <h2 className="text-primary font-bold uppercase tracking-[0.2em] text-sm mb-4">Technical Stack</h2>
+              <h2 className="text-secondary font-bold uppercase tracking-[0.2em] text-sm mb-4">Technical Stack</h2>
               <h3 className="text-5xl md:text-6xl font-black text-white mb-8 uppercase tracking-tighter leading-none italic">Core Skills.</h3>
               <p className="text-surface-400 text-lg leading-relaxed mb-12 font-medium">
                 I specialize in full-stack development using modern technologies that ensure speed, security, and scalability.
@@ -157,8 +157,8 @@ const Home = () => {
       <section id="contact" className="py-40 bg-base-950">
         <div className="max-w-4xl mx-auto px-6">
           <div className="text-center mb-20">
-            <h2 className="text-primary font-bold uppercase tracking-[0.2em] text-sm mb-6">Contact</h2>
-            <h3 className="text-6xl md:text-8xl font-black text-white uppercase tracking-tighter leading-[0.8] mb-10">Get In <span className="text-primary">Touch.</span></h3>
+            <h2 className="text-secondary font-bold uppercase tracking-[0.2em] text-sm mb-6">Contact</h2>
+            <h3 className="text-6xl md:text-8xl font-black text-white uppercase tracking-tighter leading-[0.8] mb-10">Get In <span className="text-gradient-red glow-text-red">Touch.</span></h3>
           </div>
 
           <div className="glass-card p-10 sm:p-20 shadow-2xl">

@@ -7,10 +7,13 @@ const Navbar = () => {
         <div className="max-w-7xl mx-auto px-6 lg:px-10 h-full">
           <div className="flex items-center justify-between h-full">
             <Link to="/" className="flex items-center gap-3 group">
-              <div className="w-10 h-10 bg-primary rounded-xl flex items-center justify-center font-black text-base-950 italic text-xl group-hover:rotate-6 transition-transform">
+              <div className="w-10 h-10 bg-primary rounded-xl flex items-center justify-center font-black text-base-950 italic text-xl group-hover:rotate-6 transition-transform shadow-[0_0_20px_rgba(255,215,0,0.2)]">
                 K
               </div>
-              <span className="text-xl font-bold text-white tracking-tight group-hover:text-primary transition-colors uppercase italic">Kabir Saboo</span>
+              <div className="flex items-center gap-1">
+                <span className="text-xl font-bold text-white tracking-tight group-hover:text-primary transition-colors uppercase italic">Kabir Saboo</span>
+                <div className="w-1.5 h-1.5 rounded-full bg-secondary group-hover:animate-pulse"></div>
+              </div>
             </Link>
             
             <div className="hidden md:block">

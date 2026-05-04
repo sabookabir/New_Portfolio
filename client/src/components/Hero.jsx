@@ -18,15 +18,15 @@ const Hero = () => {
           >
             <div className="inline-flex items-center gap-3 px-4 py-2 bg-white/5 border border-white/10 rounded-full mb-8">
               <span className="relative flex h-2 w-2">
-                <span className="absolute inline-flex h-full w-full rounded-full bg-green-500 opacity-75 animate-ping"></span>
-                <span className="relative inline-flex rounded-full h-2 w-2 bg-green-500"></span>
+                <span className="absolute inline-flex h-full w-full rounded-full bg-secondary opacity-75 animate-ping"></span>
+                <span className="relative inline-flex rounded-full h-2 w-2 bg-secondary"></span>
               </span>
               <span className="text-[11px] font-bold text-surface-400 tracking-widest uppercase">Available for New Projects</span>
             </div>
 
             <h1 className="text-6xl sm:text-7xl lg:text-8xl font-black text-white tracking-tight leading-[0.9] mb-8">
               Building <br />
-              <span className="text-primary glow-text">Premium</span> <br />
+              <span className="text-gradient-red glow-text-red">Premium</span> <br />
               Software.
             </h1>
             
